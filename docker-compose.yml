@@ -18,11 +18,11 @@ services:
 
   wisdom-book:
     restart: on-failure
-    container_name: wisdom-book
+    container_name: wisdom-book-mare
     build:
       context: .
       dockerfile: book.dockerfile
-    image: wisdom-book:latest
+    image: mayrne/book-6916:latest
     expose:
       - 8090
     ports:
